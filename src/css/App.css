@@ -1,0 +1,231 @@
+/*
+ * author: Colton Tshudy
+ * version: 04/07/2023
+ */
+
+body {
+  background: white;
+  margin: 0px;
+}
+
+.background {
+  color: rgb(33, 44, 56);
+}
+
+.viewport {
+  /* background: rgb(33, 44, 56); */
+  /* background: radial-gradient(#3f4866 35%, black 100%); */
+  /* background: radial-gradient(white 35%, black 100%); */
+
+  width: 1024px;
+  height: 600px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+}
+
+.viewport-overlay {
+  background: radial-gradient(black 10%, rgb(0, 0, 0, 0) 70%, black 100%);
+  /* box-shadow: inset 0 0 100px 60px black; */
+
+  width: 100%;
+  height: 100%;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.rawtext {
+  font-size: 20px;
+}
+
+.duty-readout {
+  position: absolute;
+  left: calc(1024px - 100px);
+}
+
+.speed-dial {
+  position: absolute;
+  left: 400px;
+  top: 400px;
+}
+
+.motor-temp {
+  position: absolute;
+  right: -20px;
+  bottom: 5%;
+}
+
+.mosfet-temp {
+  position: absolute;
+  right: 40px;
+  bottom: 5%;
+}
+
+.speedometer {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  opacity: 1;
+}
+
+.motor-current {
+  position: absolute;
+  left: 200px;
+  bottom: 200px;
+}
+
+.temporary {
+  position: absolute;
+  left: 500px;
+  top: 500px;
+}
+
+.battery-voltage {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  background-color: black;
+  border-radius: 17%/30%;
+  border: 2px solid white;
+}
+
+.center-gauge {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+}
+
+.clock-new {
+  bottom: 0%;
+  left: 50%;
+  text-shadow: 4px 4px 5px black;
+}
+
+#motor-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+  right: 10px;
+  bottom: 410px;
+}
+
+#mosfet-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+  right: 67px;
+  bottom: 410px;
+}
+
+#battery-icon {
+  position: absolute;
+  width: 60px;
+  filter: invert(100%);
+  left: 6px;
+  top: 130px;
+}
+
+#vesc-icon {
+  position: absolute;
+  width: 15%;
+  top: 1%;
+  left: 1%;
+  filter: grayscale(100%) invert(100%);
+}
+
+.mph-progress {
+  rotate: -135deg;
+  translate: 1px -3px;
+  z-index: 0;
+}
+
+.soc {
+  position: absolute;
+  left: 0%;
+  bottom: 20%;
+}
+
+.voltmeter {
+  position: absolute;
+  border-radius: 10px;
+  right: 0%;
+  top: 6%;
+  color: rgb(100, 255, 100, 1);
+  text-shadow: 0 0 15px rgb(100, 255, 100, 1);
+  background-color: black;
+  box-shadow: 0 0 10px 5px black;
+}
+
+.odometer {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  border-radius: 10px;
+  font-size: 40px;
+  color: black;
+  background-color: rgb(217, 243, 224);
+  box-shadow: 0px 3px 10px 2px black,
+    inset 0 0 20px 3px black;
+  z-index: 10;
+  text-shadow: 2px 2px 4px black;
+}
+
+.speed-ro {
+  position: 'absolute';
+  color: #ffffff;
+  text-shadow: 0 0 10px rgb(255, 255, 255, 1);
+  z-index: 10;
+}
+
+.speed-ro-bg {
+  background-color: rgb(61, 85, 67);
+  border-radius: 30px;
+  color: rgb(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 40px 10px black, 0 0 10px 1px;
+  z-index: 9;
+}
+
+.power-motor {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  border-radius: 10px;
+  font-size: 40px;
+  color: black;
+  background-color: rgb(217, 243, 224);
+  box-shadow: 0px 3px 10px 2px black,
+    inset 0 0 20px 3px black;
+  z-index: 10;
+  text-shadow: 2px 2px 7px black;
+}
+
+.power-battery {
+  position: absolute;
+  left: 10%;
+  bottom: 3%;
+  border-radius: 10px;
+  font-size: 40px;
+  color: black;
+  background-color: rgb(217, 243, 224);
+  box-shadow: 0px 3px 10px 2px black,
+    inset 0 0 20px 3px black;
+  z-index: 10;
+  text-shadow: 2px 2px 7px black;
+}
+
+.efficiency {
+  position: absolute;
+  left: 46%;
+  bottom: 32%;
+  color: #ffffff;
+  text-shadow: 4px 4px 5px black;
+  z-index: 10;
+}

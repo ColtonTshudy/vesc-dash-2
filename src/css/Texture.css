@@ -1,0 +1,120 @@
+.bg-texture-0 {
+    background: rgb(33, 44, 56);
+}
+
+.bg-texture-1 {
+    --s: 50px;
+    --c: #000000;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #02020f00 66%, #00f7ff 68% 70%, hwb(249 35% 39% / 0) 72%;
+    background:
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+        repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+
+.bg-texture-2 {
+
+    --u: 20px;
+    --c1: #a29478;
+    --c2: #616c7f;
+    --c3: #414c66;
+    --gp: 50%/ calc(var(--u) * 10) calc(var(--u) * 7.8);
+    --dg: 0 25%, #fff0 0 100%;
+    --dr: from 45deg at;
+    --dl: from -135deg at;
+    --du: from -45deg at 50%;
+    --dd: from 135deg at 50%;
+    background:
+        /*right*/
+        conic-gradient(var(--dr) 86% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 76% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 74.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 65% 62%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 63.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 56% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 54.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dr) 50% 62%, var(--c2) var(--dg)) var(--gp),
+        /*left*/
+        conic-gradient(var(--dl) 14% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 24% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 25.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 35% 62%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 36.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 44% 62%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 45.5% 62%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dl) 50% 62%, var(--c2) var(--dg)) var(--gp),
+        /*up*/
+        conic-gradient(var(--du) 19%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 31%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 33%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 43.5%, var(--c2) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 45.5%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 55%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 57%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--du) 66%, var(--c2) var(--dg)) var(--gp),
+        /*down*/
+        conic-gradient(var(--dd) 81%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 69%, var(--c3) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 67%, var(--c1) var(--dg)) var(--gp),
+        conic-gradient(var(--dd) 58%, var(--c2) var(--dg)) var(--gp);
+}
+
+.bg-texture-3 {
+    --u: 1vmin;
+    --c1: #000000;
+    --c2: #a4cf72;
+    --c3: #6d9d35;
+    --c4: #54762b;
+    --shape:
+        var(--c1) 0 calc(var(--u) * 0.65),
+        var(--c2) calc(var(--u) * 0.85) calc(var(--u) * 1),
+        var(--c3) calc(var(--u) * 1.75),
+        var(--c1) calc(var(--u) * 1.9) calc(var(--u) * 2),
+        var(--c3) calc(var(--u) * 2.15) calc(var(--u) * 2.65),
+        var(--c4) calc(var(--u) * 3.15),
+        var(--c1) calc(var(--u) * 3.35) calc(var(--u) * 3.45),
+        var(--c4) calc(var(--u) * 3.6) calc(var(--u) * 4.3),
+        var(--c1) calc(var(--u) * 4.6) calc(var(--u) * 4.7),
+        #fff0 calc(var(--u) * 4.8) 100%;
+    --gp: 50%/calc(var(--u) * 10) calc(var(--u) * 6.33);
+    background:
+        radial-gradient(circle at 50% 150%, var(--shape)) var(--gp),
+        radial-gradient(circle at 0% 100%, var(--shape)) var(--gp),
+        radial-gradient(circle at 100% 100%, var(--shape)) var(--gp),
+        radial-gradient(circle at 50% 50%, var(--shape)) var(--gp),
+        radial-gradient(circle at 0% 0%, var(--shape)) var(--gp),
+        radial-gradient(circle at 100% 0%, var(--shape)) var(--gp),
+        var(--c2);
+}
+
+.bg-texture-4 {
+    --l: transparent 5px,
+        hsla(197, 62%, 11%, .5) 0 10px,
+        transparent 0 35px,
+        hsla(5, 53%, 63%, .5) 0 40px,
+        hsla(197, 62%, 11%, .5) 0 50px,
+        transparent 0 60px,
+        hsla(5, 53%, 63%, .5) 0 70px,
+        hsla(35, 91%, 65%, .5) 0 80px,
+        transparent 0 90px,
+        hsla(5, 53%, 63%, .5) 0 110px,
+        transparent 0;
+    background:
+        repeating-linear-gradient(45deg,
+            var(--l) 120px, hsla(197, 62%, 11%, .5) 0 140px),
+        repeating-linear-gradient(135deg,
+            var(--l) 140px, hsla(197, 62%, 11%, .5) 0 160px) #e9d4b9
+}
+
+.bg-texture-5 {
+    background-color: #3a0606;
+
+    background-image: repeating-linear-gradient(transparent, transparent 50px, gold 50px, gold 53px, transparent 53px, transparent 63px, gold 63px, gold 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, .5) 116px, rgba(0, 0, 0, .5) 166px, darkgreen 166px, darkgreen 169px, rgba(0, 0, 0, .5) 169px, rgba(0, 0, 0, .5) 179px, darkgreen 179px, darkgreen 182px, rgba(0, 0, 0, .5) 182px, rgba(0, 0, 0, .5) 232px, transparent 232px),
+        repeating-linear-gradient(270deg, transparent, transparent 50px, gold 50px, gold 53px, transparent 53px, transparent 63px, gold 63px, gold 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, .5) 116px, rgba(0, 0, 0, .5) 166px, darkgreen 166px, darkgreen 169px, rgba(0, 0, 0, .5) 169px, rgba(0, 0, 0, .5) 179px, darkgreen 179px, darkgreen 182px, rgba(0, 0, 0, .5) 182px, rgba(0, 0, 0, .5) 232px, transparent 232px);
+}
