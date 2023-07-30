@@ -1,41 +1,59 @@
-
-
 .font-face-dot {
-    font-family: "led_counter-7";
-  }
-  
-  .font-face-rubik {
-    font-family: "Rubik";
-  }
-  
-  .font-face-horizon {
-    font-family: "Horizon";
-  }
-  
-  .font-face-segment {
-    font-family: "Seven_Segment";
-  }
-  
-  @font-face {
-    font-family: "led_counter-7";
-    src: local("led_counter-7"),
-      url("../fonts/led_counter-7/led_counter-7.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Rubik";
-    src: local("Rubik"),
-      url("../fonts/Rubik/static/Rubik-MediumItalic.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Horizon";
-    src: local("Horizon"),
-      url("../fonts/dash-horizon-font/Dashhorizon-eZ5wg.otf") format("opentype");
-  }
-  
-  @font-face {
-    font-family: "Seven_Segment";
-    src: local("Seven_Segment"),
-      url("../fonts/fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Regular.ttf") format("truetype");
-  }
+  font-family: "led_counter-7";
+}
+
+@font-face {
+  font-family: "led_counter-7";
+  src: local("led_counter-7"),
+    url("../fonts/led_counter-7/led_counter-7.ttf") format("truetype");
+}
+
+.font-face-rubik {
+  font-family: "Rubik";
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url("../fonts/Rubik/static/Rubik-MediumItalic.ttf") format("truetype");
+}
+
+.font-face-horizon {
+  font-family: "Horizon";
+}
+
+@font-face {
+  font-family: "Horizon";
+  src: local("Horizon"),
+    url("../fonts/dash-horizon-font/Dashhorizon-eZ5wg.otf") format("opentype");
+}
+
+.font-face-segment {
+  font-family: "Seven_Segment";
+}
+
+@font-face {
+  font-family: "Seven_Segment";
+  src: local("Seven_Segment"),
+    url("../fonts/fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Regular.ttf") format("truetype");
+}
+
+.font-face-sf {
+  font-family: "San Francisco";
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: local("San Francisco"),
+    url("../fonts/San Francisco/otf/SFNSText-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: local("San Francisco"),
+    url("../fonts/San Francisco/otf/SFNSDisplay-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+} 

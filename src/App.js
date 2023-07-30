@@ -7,9 +7,10 @@ import Socket from './CAN-subscriber.js'
 import TemperatureGauge from './components/temperature.js';
 import Speedometer from './components/speedometer.js'
 import DateTime from './components/date-time.js';
-import RadialBar from './components/radial-progress';
-import ValueBox from './components/valuebox'
-import SoC from './components/soc';
+import RadialBar from './components/radial-progress.js';
+import ValueBox from './components/valuebox.js'
+import SoC from './components/soc.js';
+import Battery from './components/battery.js'
 
 import motorIcon from './images/motor.png';
 import mosfetIcon from './images/mosfet.jpg';
@@ -62,6 +63,8 @@ function App() {
 
                 {/* Uncomment this for full CANbus debug information */}
                 {/* {Object.entries(data).map(([key, value]) => <label key={key} className='rawtext'>{key} = {Math.trunc(value * 100) / 100}</label>)} */}
+
+                <Battery soc={.5} voltage={50} className="battery" width='200px' height='100px'/>
 
                 <TemperatureGauge value={data.mot_temp} className="motor-temp" min={0} max={100} ticks={5} size={200} />
                 <TemperatureGauge value={data.mos_temp} className="mosfet-temp" min={0} max={100} ticks={5} size={200} />

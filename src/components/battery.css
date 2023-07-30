@@ -1,0 +1,45 @@
+:root {
+    --b-color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body {
+    border: solid 2px var(--b-color);
+    flex: 0 0 89%;
+    height: 100%;
+    border-radius: .7vmax;
+    display: flex;
+    max-width: 89%;
+}
+
+.nub {
+    flex: 0 0 8%;
+    height: 50%;
+    border-top-right-radius: .5vmax;
+    border-bottom-right-radius: .5vmax;
+    background: var(--b-color);
+}
+
+.fill {
+    max-width: 100%;
+    border-radius: .5vmax;
+    margin: 5px;
+    height: calc(100%-10px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill > label {
+    max-width: 100%;
+    font-size: 200%;
+    font-family: "San Francisco";
+    font-weight: bold;
+    color: rgb()
+}

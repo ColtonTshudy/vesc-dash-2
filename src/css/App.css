@@ -229,3 +229,9 @@ body {
   text-shadow: 4px 4px 5px black;
   z-index: 10;
 }
+
+.battery {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
