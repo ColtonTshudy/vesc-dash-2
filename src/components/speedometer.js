@@ -58,10 +58,10 @@ const Speedometer = ({ className, value=0, min=0, max=0, ticks=0, size }) => {
                 position: 'absolute',
                 width: '300px',
                 height: '300px',
-                backgroundColor: 'white',
+                backgroundColor: 'grey',
                 borderRadius: '50%',
                 boxShadow:
-                    `inset -20px -20px 50px 50px rgb(33, 44, 56),` +
+                    `inset -20px -20px 50px 50px black,` +
                     `inset -15px -15px 10px 20px black,` +
                     `0 0 20px 5px black,` +
                     `0 0 50px 20px white`,

@@ -1,7 +1,3 @@
-:root {
-    --b-color: white;
-}
-
 .main {
     display: flex;
     align-items: center;
@@ -9,25 +5,25 @@
 }
 
 .body {
-    border: solid 2px var(--b-color);
-    flex: 0 0 calc(100% - 16px);
+    border: solid 2px white;
+    flex: 0 0 calc(100% - 14px);
     height: 100%;
-    border-radius: .7vmax;
+    border-radius: .5vmax;
     display: flex;
-    max-width: calc(100% - 16px);
+    max-width: calc(100% - 14px);
 }
 
 .nub {
-    flex: 0 0 9px;
+    flex: 0 0 7px;
     height: 40%;
-    border-top-right-radius: .3vmax;
-    border-bottom-right-radius: .3vmax;
-    background: var(--b-color);
+    border-top-right-radius: .2vmax;
+    border-bottom-right-radius: .2vmax;
+    background: white;
 }
 
 .fill {
     max-width: 100%;
-    border-radius: .5vmax;
+    border-radius: .3vmax;
     margin: 2px;
     height: calc(100%-4px);
     width: 100%;
@@ -41,8 +37,9 @@
     font-weight: bold;
     color: transparent;
 
-    text-align: right;
+    text-align: center;
 
+    background-clip: text;
     -webkit-background-clip: text;
 
     flex: 0 0 100%;

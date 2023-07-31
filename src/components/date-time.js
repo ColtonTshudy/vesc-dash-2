@@ -19,11 +19,8 @@ const DateTime = ({ className, fontsize, width, justify }) => {
 
     return (
         <div className={className} style={{
-            margin: `${-height / 2}px 0 0 ${-width / 2}px`,
-            position: 'absolute',
             width: `${width}px`,
             height: `${height}px`,
-            borderRadius: '10px',
             textAlign: justify,
             fontSize: `${fontsize}px`,
             padding: `${padding}px`,

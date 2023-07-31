@@ -1,16 +1,19 @@
 import './battery.css';
 import '../css/Fonts.css'
 
-const Battery = ({ className, soc, voltage, width, height }) => {
+const Battery = ({ className, soc, voltage, width, height, charging }) => {
     //variable conditioning
     const fontHeight = Math.min(width*0.25, height*0.8);
     const soc_per = isNaN(soc)? 0 : 100*soc;
     const voltage_trunc = isNaN(voltage)? 0 : padZeros(1, voltage)
     
     //bar color
-    let barColor = 'rgb(0,255,0)';
+    let barColor = 'white';
     if(soc_per < 25){
         barColor = 'rgb(255,0,0)';
+    }
+    if(charging){
+        barColor = 'rgb(0,255,0)';
     }
 
     return (
@@ -28,7 +31,7 @@ const Battery = ({ className, soc, voltage, width, height }) => {
                         lineHeight: `${height}px`,
                         backgroundImage: `linear-gradient(to right, rgb(0,0,0,.9) ${soc_per}%, white ${soc_per}%)`,
                     }}>
-                        {voltage_trunc}V&nbsp;&nbsp;
+                        {voltage_trunc}V
                     </label>
                 </div>
             </div>

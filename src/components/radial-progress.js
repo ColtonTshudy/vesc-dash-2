@@ -45,7 +45,7 @@ const RadialBar = ({
     const PI = 3.14
     const R = (radius - strokeWidth) / 2
     const xScale = mirror ? -1 : 1
-    const bg = background ? 'rgb(0,0,0,.6)' : 'rgb(0,0,0,0)'
+    const bg = background ? 'rgb(255,255,255,.2)' : 'rgb(0,0,0,0)'
     const textVisible = showValue? 'visible' : 'hidden'
 
     let color = []

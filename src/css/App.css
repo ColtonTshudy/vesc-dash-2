@@ -55,18 +55,6 @@ body {
   top: 400px;
 }
 
-.motor-temp {
-  position: absolute;
-  right: -20px;
-  bottom: 5%;
-}
-
-.mosfet-temp {
-  position: absolute;
-  right: 40px;
-  bottom: 5%;
-}
-
 .speedometer {
   position: absolute;
   left: 50%;
@@ -98,11 +86,12 @@ body {
 .center-gauge {
   position: absolute;
   top: 47%;
-  left: 50%;
+  left: 37%;
 }
 
 .clock-new {
-  bottom: 0%;
+  position: absolute;
+  bottom: 20%;
   left: 50%;
   text-shadow: 4px 4px 5px black;
 }
@@ -126,8 +115,8 @@ body {
 #vesc-icon {
   position: absolute;
   width: 15%;
-  top: 1%;
-  left: 1%;
+  bottom: 1%;
+  right: 1%;
   filter: grayscale(100%) invert(100%);
 }
 
@@ -156,7 +145,7 @@ body {
 
 .odometer {
   position: absolute;
-  left: 50%;
+  left: 37%;
   bottom: 15%;
   border-radius: 10px;
   font-size: 40px;
@@ -199,8 +188,8 @@ body {
 
 .power-battery {
   position: absolute;
-  left: 10%;
-  bottom: 3%;
+  right: 2%;
+  bottom: 10%;
   border-radius: 10px;
   font-size: 40px;
   color: black;
@@ -213,15 +202,32 @@ body {
 
 .efficiency {
   position: absolute;
-  left: 46%;
+  left: 33%;
   bottom: 32%;
   color: #ffffff;
   text-shadow: 4px 4px 5px black;
   z-index: 10;
 }
 
-.battery {
+#info-box {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   top: 2%;
   right: 1%;
+}
+
+#temperature-box{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+#battery-box {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: right;
 }
