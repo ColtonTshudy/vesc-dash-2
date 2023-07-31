@@ -1,6 +1,7 @@
 import React from 'react'
+import ValueBox from './valuebox.js'
 
-const ValueBox = ({ className, value, units, fontsize, width, decimals, justify }) => {
+const MotorTemp = ({ className, value, units, fontsize, width, decimals, justify }) => {
     ValueBox.defaultProps = {
         units: '',
         decimals: 0,
@@ -17,14 +18,15 @@ const ValueBox = ({ className, value, units, fontsize, width, decimals, justify 
 
     return (
         <div className={className} style={{
-            margin: `${-height / 2-padding}px 0 0 ${-width / 2-padding}px`,
-            width: `${width}px`,
             height: `${height}px`,
-            textAlign: justify,
-            fontSize: `${fontsize}px`,
-            padding: `${padding}px`,
+            width: `${width}px`,
         }}>
-            {display}{units}
+            <label style={{
+                fontFamily: "San Francisco",
+                fontSize: `${height}px`,
+            }}>
+                {padZeros(0, value)}°C
+            </label>
         </div>
     );
 }
@@ -36,11 +38,11 @@ const padZeros = (decimals, value) => {
 
     if (decimals === 0)
         return String(value)
-    
+
     const [front, rear] = String(value).split('.')
     let output = rear !== undefined ? front + '.' + rear : front + '.'
     return output.padEnd(front.length + 1 + decimals, '0')
 }
 
 
-export default ValueBox
+export default MotorTemp

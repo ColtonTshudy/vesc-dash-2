@@ -107,7 +107,8 @@ const RadialBar = ({
                     />
                 </svg>
             </CircleContainer>
-            <div className='font-face-rubik' style={{
+            <div className='font-face-sf' style={{
+                fontWeight: 'bold',
                 bottom: `${ty}`,
                 left: `${tx}`,
                 position: 'absolute',
