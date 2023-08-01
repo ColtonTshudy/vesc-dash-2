@@ -23,7 +23,7 @@ const Speedometer = ({ className, value=0, min=0, max=0, ticks=0, size }) => {
             colorNeedleShadowDown: "rgb(0,0,0,1)",
             needleStart: 55,
             needleEnd: 100,
-            colorPlate: 'rgb(255, 255, 230)',
+            colorPlate: 'white',
             fontValueSize: 60,
             fontNumbersSize: 25,
             valueInt: 2,
@@ -63,8 +63,7 @@ const Speedometer = ({ className, value=0, min=0, max=0, ticks=0, size }) => {
                 boxShadow:
                     `inset -20px -20px 50px 50px black,` +
                     `inset -15px -15px 10px 20px black,` +
-                    `0 0 20px 5px black,` +
-                    `0 0 50px 20px white`,
+                    `0 0 20px 5px black`,
                 zIndex: 5,
             }} />
             <div className={className} style={{
