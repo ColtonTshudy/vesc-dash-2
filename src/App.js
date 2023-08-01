@@ -69,7 +69,7 @@ function App() {
                 <div id='info-box'>
                     <div id="battery-box">
                         <img src={chargeIcon} id="charge-icon" alt="charging" style={{opacity: regen? 1 : 0}}/>
-                        <Battery soc={.45} voltage={data.battery_voltage} width={150} height={40} charging={regen}/>
+                        <Battery soc={soc} voltage={data.battery_voltage} width={150} height={40} charging={regen}/>
                     </div>
                     <div id="temperature-box">
                         <IconBox value={data.mot_temp} units='°C' image={motorIcon} width={125} height={40} align='left' warn={config['warn_temp_mot']}/>
@@ -99,10 +99,14 @@ function App() {
                 <RadialBar className="center-gauge" value={data.motor_current} units='A' primaryColor={['white', 'white']} secondaryColor={['palegreen', 'seagreen']} max={config['max_amps_mot']} radius={700} strokeWidth={30} start={.67} end={.82} tx='5%' ty='20%' showValue={true} strokeLinecap='round'/>
 
                 <RadialBar className="center-gauge" mirror={true} value={data.rpm} units='RPM' primaryColor={['white', 'red']} secondaryColor={['white', 'pink']} max={config['max_rpm']} radius={615} strokeWidth={20} start={.6} end={.9} tx='10%' ty='6%' showValue={true} strokeLinecap='round'/>
-
+                
             </div>
         </div>
     );
+}
+
+const Test = () => {
+    console.log('updated')
 }
 
 export default App;
